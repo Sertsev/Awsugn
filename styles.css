@@ -14,8 +14,8 @@ body {
 .slide {
     position: relative;
     min-width: 100vw;
-    min-height: 60vh;
-    max-height: 65vh;
+    min-height: 10vh;
+    max-height: 15vh;
     align-items: center;
     background: url(./img/cover_2.jpg);
     margin: -4%;
