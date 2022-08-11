@@ -1,0 +1,20 @@
+{
+    "spellright.language": [
+        "en-US-9-0."
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "html"
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:Awsugn Landing Page}/trackDB",
+            "name": "trackDB"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

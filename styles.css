@@ -1,0 +1,266 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(163, 52, 52);
+    text-align: center;
+    z-index: inherit;
+}
+
+body {
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.header,
+.slide {
+    position: relative;
+    min-width: 100vw;
+    min-height: 60vh;
+    max-height: 65vh;
+    align-items: center;
+    background: url(./img/cover_2.jpg);
+    margin: -4%;
+    margin-bottom: 2%;
+}
+
+.slide {
+    padding-top: 10px;
+    /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
+    background-image: radial-gradient(circle, rgb(7, 5, 5), transparent 100%);
+}
+
+.header h1,
+.header p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 21vh;
+    font-size: 500%;
+}
+
+.branding21.formFooter {
+    display: none;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    text-shadow: 4px 3px #ff0000;
+}
+
+.header p {
+    font-size: 90%;
+    margin-top: 1vh;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px #c56363;
+}
+
+.section {
+    max-width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    justify-content: center;
+}
+
+iframe {
+    border: none;
+}
+
+.new-item {
+    margin: 20px -20px;
+    flex: 25%;
+    max-height: 90%;
+    align-items: center;
+}
+
+.new-item h3,
+.new-item button {
+    margin-top: -550px;
+}
+
+.new-item-img {
+    object-fit: scale-down;
+}
+
+.item {
+    text-align: center;
+    margin: 5px;
+    flex: 15%;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: 2.4px solid rgb(216, 70, 70);
+    border-radius: 5px;
+    background-color: rgb(216, 70, 70);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: medium;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: rgb(216, 70, 70);
+}
+
+.new-btn {
+    padding: 20px 50px;
+    border: 1px solid rgb(216, 70, 70);
+    font-weight: bold;
+    font-size: large;
+}
+
+.new-btn:hover {
+    background-color: white;
+    color: rgb(216, 70, 70);
+}
+
+h2 {
+    padding: 15px;
+    border-bottom: 1px solid rgb(223, 217, 217);
+    /* width: 100px; */
+}
+
+footer {
+    padding: 10px;
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    margin: -4%;
+    margin-top: 50px;
+    min-width: 100vw;
+}
+
+footer p {
+    padding: 5px;
+}
+
+br {
+    margin: 0px;
+}
+
+/* ***************** popup css ********************* */
+
+#popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10vh 0vh;
+    background-color: rgba(24, 15, 15, 0.582);
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    display: none;
+    justify-content: center;
+}
+
+.popup {
+    width: 50%;
+    height: 80vh;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    z-index: 7;
+}
+
+/* 
+#size-popup {
+    display: block;
+    width: 100%;
+} */
+
+.size-input {
+    display: block;
+    width: 100%;
+    height: 75%;
+}
+
+.ipt {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.ipt label {
+    flex: 80%;
+}
+
+.ipt input {
+    padding: 1px;
+    color: black;
+    border: 1px solid rgb(216, 70, 70);
+    border-radius: 3px;
+}
+
+#learn-size {
+    display: block;
+}
+
+
+.popup #skip {
+    width: 80%;
+    animation-name: skip-btn;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.popup #skip:hover {
+    animation-play-state: paused;
+    color: white;
+}
+
+.popup h2 {
+    padding: 5px 25px;
+    font-size: larger;
+}
+
+@media only screen and (max-width: 1400px) {
+    .popup {
+        width: 55%;
+        height: 77vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .popup {
+        width: 71%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .popup {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .header h1 {
+        margin-top: 5vh;
+        padding-bottom: 10px;
+        font-size: 200%;
+        text-align: center;
+    }
+    .header p {
+        display: none;
+    }
+    h2 {
+        font-size: 110%;
+    }
+
+    .header, .slide {
+        min-height: 10vh;
+        padding-top: 5px;
+        max-height: 30vh;
+        background: url(./img/cover_2.jpg);
+    }
+
+    .popup {
+        width: 80%;
+        height: 84vh;
+
+    }
+}
+
+/* */
+
+@media screen and (max-width: 1280px) and (min-width: 960px) {
+    #new-item4 {
+        display: none;
+    }
+}
